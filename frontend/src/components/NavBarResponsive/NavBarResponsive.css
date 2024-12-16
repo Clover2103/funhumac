@@ -1,0 +1,82 @@
+:root {
+  --funhumac-blue-lite: #57c2b1;
+  --funhumac-blue-mid: #4295b0;
+  --funhumac-blue-dark: #3471aa;
+  --funhumac-white: #FFFFFF;
+  --funhumac-dark: #000000;
+}
+
+.navBarResponsive {
+  background-color: white;
+  border-bottom: 1.5px solid var(--funhumac-blue-dark);
+}
+
+.navBarResponsive__header {
+  display: flex;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  background-color: var(--funhumac-white);
+  box-shadow: 0px 6px 6px var(--funhumac-blue-dark);
+  opacity: 0.9;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navBarResponsive__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cogno-logo-navbar img{
+  cursor: pointer;
+  height: 100px;
+}
+
+.menu-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.navBarResponsive__links {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 0;
+  top: 110px;
+  width: 100%;
+  border-bottom: 1px solid var(--funhumac-blue-dark);
+}
+
+.navBarResponsive__links a {
+  text-decoration: none;
+  color: var(--funhumac-dark);
+  padding: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navBarResponsive__links a:hover {
+  background-color: var(--funhumac-blue-dark);
+  color: var(--funhumac-dark);
+}
+
+.btnFormRes button {
+  margin: 10px auto;
+  width: 90%;
+  height: 44px;
+  border-radius: 12px;
+  border: none;
+  background-color: var(--funhumac-blue-lite);
+  color: var(--funhumac-white);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
