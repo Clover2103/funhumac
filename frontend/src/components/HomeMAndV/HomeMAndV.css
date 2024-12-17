@@ -1,0 +1,248 @@
+:root {
+  --funhumac-blue-lite: #57c2b1;
+  --funhumac-blue-mid: #4295b0;
+  --funhumac-blue-dark: #3471aa;
+  --funhumac-white: #FFFFFF;
+  --funhumac-dark: #000000;
+}
+
+
+.bodyMAndV {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerMAndV {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  background-color: #00000080;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.contentMAndV {
+  background-color: var(--funhumac-white);
+  border-radius: 25px;
+  position: relative;
+}
+
+.contentMAndV img {
+  width: 200px;
+}
+
+.vision,
+.mision {
+  position: relative;
+  min-height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.covered {
+  opacity: 0;
+  transform: scale(0.95);
+  background-color: var(--funhumac-blue-dark);
+}
+
+/* Botón para alternar el efecto */
+.coverToggle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transform: scale(1);
+  justify-content: center;
+  background-color: var(--funhumac-blue-dark);
+  border-radius: 12px;
+  margin-top: -8px;
+}
+
+.coverTogglecovered {
+  position: absolute;
+  opacity: 0;
+}
+
+.coverToggle button {
+  background-color: var(--funhumac-blue-lite);
+  color: var(--funhumac-white);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.coverToggle button:hover {
+  background-color: var(--funhumac-dark);
+  color: var(--funhumac-white);
+}
+
+.contentMAndV p{
+  text-align: justify;
+  padding: 0 20px;
+}
+
+.rectanguloMAndV {
+  position: absolute;
+  background-color: #00000080;
+  width: 104%;
+  border-radius: 25px;
+  min-height: 320px;
+  z-index: -1;
+}
+
+.circleMAndV1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--funhumac-blue-lite);
+  top: -5%;
+  left: -4%;
+  z-index: -3;
+}
+
+.circleMAndV2 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: var(--funhumac-blue-dark);
+  top: -16%;
+  left: 2%;
+  z-index: -4;
+}
+
+.circleMAndV3 {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: var(--funhumac-blue-mid);
+  top: -5%;
+  left: 8%;
+  z-index: -2;
+}
+
+.circleMAndV4 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: var(--funhumac-dark);
+  top: -5%;
+  right: 2%;
+  z-index: -3;
+}
+
+.circleMAndV5 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--funhumac-blue-dark);
+  top: -5%;
+  right: -5%;
+  z-index: -2;
+}
+
+.circleMAndV6 {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: var(--funhumac-blue-lite);
+  top: 5%;
+  right: -8%;
+  z-index: -4;
+}
+
+.circleMAndV7 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--funhumac-blue-mid);
+  bottom: -12%;
+  right: -8%;
+  z-index: -3;
+}
+
+.circleMAndV8 {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: var(--funhumac-blue-dark);
+  bottom: -5%;
+  right: -5%;
+  z-index: -2;
+}
+
+.circleMAndV9 {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: var(--funhumac-dark);
+  bottom: -12%;
+  right: 5%;
+  z-index: -4;
+}
+
+.circleMAndV10 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--funhumac-blue-mid);
+  bottom: -10%;
+  left: 45%;
+  z-index: -2;
+}
+
+.circleMAndV11 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: var(--funhumac-blue-lite);
+  bottom: -16%;
+  left: 50%;
+  z-index: -3;
+}
+
+.circleMAndV12 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: var(--funhumac-blue-mid);
+  bottom: 0%;
+  left: -5%;
+  z-index: -3;
+}
+
+.circleMAndV13 {
+  position: absolute;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: var(--funhumac-blue-dark);
+  bottom: -12%;
+  left: 0%;
+  z-index: -2;
+}

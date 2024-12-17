@@ -1,0 +1,59 @@
+:root {
+  --funhumac-blue-lite: #57c2b1;
+  --funhumac-blue-mid: #4295b0;
+  --funhumac-blue-dark: #3471aa;
+  --funhumac-white: #FFFFFF;
+  --funhumac-dark: #000000;
+}
+
+.home-about-us {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-aboutus {
+  display: flex;
+  align-items: start;
+  min-height: 300px;
+}
+
+.cont-inf-aboutus {
+  position: absolute;
+  top: 50%;
+  left: -3%;
+  width: 450px;
+  box-shadow: 5px 5px 5px var(--funhumac-blue-mid);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 12px 12px 12px 24px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-img-aboutus {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px var(--funhumac-blue-mid);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.cont-img-aboutus img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.cont-aboutus {
+  position: relative;
+}
