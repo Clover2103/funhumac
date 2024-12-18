@@ -1,0 +1,91 @@
+.book-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: "Georgia", serif;
+}
+
+.book {
+  display: flex;
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 
+    0 8px 10px rgba(0, 0, 0, 0.3), /* Sombra general */
+    inset -10px 0px 15px rgba(0, 0, 0, 0.2), /* Sombra interior izquierda */
+    inset 10px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra interior derecha */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Simulación de página dividida */
+.book::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background-color: #e0e0e0; /* Línea central más suave */
+  z-index: 2;
+}
+
+.page {
+  flex: 1;
+  padding: 30px 20px;
+  line-height: 1.8;
+  text-align: justify;
+  background: linear-gradient(
+    to bottom, 
+    #ffffff, 
+    #f9f9f9
+  ); /* Sutil degradado para apariencia de página */
+  overflow-y: auto;
+}
+
+.left-page {
+  padding-right: 50px; /* Ajuste del espacio derecho */
+  box-shadow: inset -5px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para realismo */
+}
+
+.right-page {
+  padding-left: 50px; /* Ajuste del espacio izquierdo */
+  box-shadow: inset 5px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra para realismo */
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  background: #1849b1;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background: #143d8f;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .book::before {
+    display: none; /* Oculta la línea divisoria */
+  }
+}
