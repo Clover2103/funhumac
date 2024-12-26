@@ -1,0 +1,248 @@
+:root {
+  --funhumac-blue-lite: #57c2b1;
+  --funhumac-blue-mid: #4295b0;
+  --funhumac-blue-dark: #3471aa;
+  --funhumac-white: #FFFFFF;
+  --funhumac-dark: #000000;
+}
+
+.bodyHomeAllies {
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.bodyHomeAllies h2 {
+  color: var(--funhumac-white);
+  text-align: center;
+  font-size: 30px;
+}
+
+.alliesSlider {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contAlliesSlider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sliderAllies {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderImgAllies {
+  transition: all 0.5s ease;
+  display: none;
+  border-radius: 25px;
+}
+
+.sliderImgAllies img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sliderImgAllies.focusAllies {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  z-index: 100;
+  display: block;
+  border: 10px;
+  box-shadow: 4px 5px 20px var(--funhumac-blue-dark);
+  border-radius: 50%;
+  background-color: var(--funhumac-white);
+}
+
+.sliderImgAllies.leftAllies {
+  position: absolute;
+  z-index: 60;
+  width: 250px;
+  height: 250px;
+  left: 15%;
+  opacity: 1;
+  display: block;
+  border-radius: 25px;
+}
+
+.sliderImgAllies.rightAllies {
+  position: absolute;
+  z-index: 60;
+  width: 250px;
+  height: 250px;
+  right: 15%;
+  opacity: 1;
+  display: block;
+  border-radius: 25px;
+}
+
+.navBtnAllies {
+  position: absolute;
+  font-size: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: var(--funhumac-dark);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 150;
+}
+
+.prevBtnAllies {
+  left: 40px;
+}
+
+.nextBtnAllies {
+  right: 40px;
+}
+
+.slider-deg-allies {
+  position: absolute;
+  background-color: #4294b051;
+  z-index: 80;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 450px;
+}
+
+.info-container-allies {
+  position: absolute;
+  width: 250px;
+  height: 100px;
+  bottom: -30px;
+  background-color: #ffffffcc;
+  padding: 15px;
+  border-radius: 10px;
+  z-index: 200;
+}
+
+.info-cont-allies {
+  background-color: var(--funhumac-white);
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.info-container-allies h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: var(--cogno-dark);
+}
+
+.info-container-allies a {
+  display: block;
+  margin: 5px 0;
+  padding: 10px 15px;
+  background-color: var(--funhumac-blue-dark);
+  color: var(--funhumac-white);
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+
+.sliderImgAllies figure {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderImgAllies figure img {
+  transition: all 500ms ease-out;
+  width: 75%;
+  height: 75%;
+}
+
+.alliesInfo {
+width: 300px;
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 16px;
+margin-top: 16px;
+border-radius: 50%;
+border: 1.5px solid var(--funhumac-dark);
+}
+
+.sliderImgAllies figure .alliesInfo {
+  position: absolute;
+  margin: 0;
+  width: 300px;
+  height: 300px;
+  background-color: var(--funhumac-dark); 
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderImgAllies figure:hover > .alliesInfo{
+opacity: 1;
+visibility: visible;
+}
+
+.sliderImgAllies figure .alliesInfo p {
+  color: var(--funhumac-white);
+  font-weight: bold;
+  margin-bottom: 120px;
+  transition: all 500ms ease-out;
+  font-size: 12px;
+  width: 80%;
+}
+
+.sliderImgAllies figure:hover > .alliesInfo p {
+  margin-bottom: 15px;
+}
+
+.btn-allies {
+background-color: var(--funhumac-dark);
+border-radius: 12px;
+color: var(--aiex-white);
+font-weight: bold;
+font-size: 15px;
+padding: 8px 16px;
+cursor: pointer;
+border: 2px solid var(--funhumac-white);
+}

@@ -5,7 +5,7 @@ import imagen from "../../assets/home/aboutus/imagen1.png";
 const HomeAboutUs = () => {
   return (
     <div className="home-about-us">
-      <h2 className="mt-4">SOBRE NOSOTROS</h2>
+      <h2 className="mt-4 mb-5">SOBRE NOSOTROS</h2>
       <div className="container-aboutus container row g-2">
         <div className="col-md cont-aboutus">
           <div className="cont-img-aboutus">

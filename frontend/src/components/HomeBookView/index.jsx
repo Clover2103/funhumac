@@ -60,10 +60,10 @@ const HomeBookView = () => {
       </div>
       {/* Controles */}
       <div className="controls">
-        <button onClick={prevPage} disabled={currentPage === 0}>
+        <button className="btnHomeBook" onClick={prevPage} disabled={currentPage === 0}>
           Anterior
         </button>
-        <button onClick={nextPage} disabled={currentPage >= totalPages - 1}>
+        <button className="btnHomeBook" onClick={nextPage} disabled={currentPage >= totalPages - 1}>
           Siguiente
         </button>
       </div>

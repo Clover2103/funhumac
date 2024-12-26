@@ -63,7 +63,7 @@
   margin-top: 20px;
 }
 
-button {
+.btnHomeBook {
   padding: 10px 20px;
   margin: 0 10px;
   border: none;
@@ -75,11 +75,11 @@ button {
   transition: background 0.3s;
 }
 
-button:hover:not(:disabled) {
+.btnHomeBook:hover:not(:disabled) {
   background: #143d8f;
 }
 
-button:disabled {
+.btnHomeBook:disabled {
   background: #aaa;
   cursor: not-allowed;
 }

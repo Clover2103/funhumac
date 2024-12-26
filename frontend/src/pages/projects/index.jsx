@@ -1,10 +1,11 @@
 import React from "react";
+// import { ProjectsBody } from "../../components/ProjectsBody";
 import "./Projects.css";
 
 const Projects = () => {
   return (
     <div>
-      <h1>Projects</h1>
+      {/* <ProjectsBody /> */}
     </div>
   );
 };
