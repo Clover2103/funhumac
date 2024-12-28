@@ -1,0 +1,68 @@
+:root {
+  --cogno-blue-dark: #212c60;
+  --cogno-blue-lite: #7981be;
+  --cogno-yellow: #efb325;
+  --cogno-white: #FFFFFF;
+  --cogno-dark: #000000;
+}
+
+.bodyContactForm {
+  min-height: 110vh;
+  width: 100%;
+  background-image: url('../../assets/contact/back.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.containerContactForm {
+  background-color: #00000079;
+  width: 100%;
+  height: 107vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContactForm {
+  background-color: #ffffffc0;
+  width: 90%;
+  margin-right: 15px;
+  margin-left: 15px;
+  min-height: 70%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.cont-logo-contact {
+  color: var(--cogno-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-logo-contact img{
+  width: 250px;
+  height: 250px;
+}
+
+.cont-text-contact {
+  text-align: center;
+}
+
+.cont-logo-contact p{
+  font-size: 16px;
+}
+
+#formContact {
+  width: 90%;
+}
